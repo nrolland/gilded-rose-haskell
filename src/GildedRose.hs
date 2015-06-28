@@ -9,7 +9,7 @@ instance Show Item where
   show (Item name sellIn quality) =
     name ++ ", " ++ show sellIn ++ ", " ++ show quality
 
-updateQuality :: GildedRose -> GildedRose
+UpdateQuality :: GildedRose -> GildedRose
 updateQuality = map updateQualityItem
   where
     updateQualityItem (Item name sellIn quality) =
@@ -68,3 +68,9 @@ updateQuality = map updateQualityItem
             then (Item name sellIn' (quality' + 1))
             else (Item name sellIn' quality')
         else (Item name sellIn' quality')
+
+updateQuality' :: GildedRose -> GildedRose
+updateQuality' = map updateQualityItem'
+  where
+    updateQualityItem' (Item name sellIn quality) = undefined
+             

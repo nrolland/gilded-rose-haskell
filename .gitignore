@@ -9,3 +9,4 @@ TAGS
 /.cabal-sandbox/
 /cabal.sandbox.config
 
+/docsets/
